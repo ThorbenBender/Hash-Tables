@@ -46,7 +46,7 @@ def hash_table_insert(hash_table, key, value):
     # '''
     hash_key = hash(key)
     if hash_table.storage[hash_key] is None:
-        hash_table.storage[hash_key] = list(value)
+        hash_table.storage[hash_key] = value
         return True
     else:
         for pair in hash_table.storage[hash_key]:
